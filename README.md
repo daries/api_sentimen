@@ -1,4 +1,4 @@
-# API Sentimen Analisis Berita Dengan NLP.js , scarping berita dengan NewspaperJs dan Pencarian Berita dengan Indo-news
+# API Sentimen Analisis Berita Dengan NLP.js , scarping berita dengan NewspaperJs dan Pencarian Berita dengan Indo news scraper
 
 This source code is part of [Newspaper.js,indo-news-scraper.js,Redis.io,Node.js, Express.js, Sequelize.js and DB PostgreSQL ]
 

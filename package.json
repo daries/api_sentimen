@@ -1,19 +1,31 @@
 {
-  "name": "node-sequelize",
-  "version": "0.0.0",
+  "name": "API_Sentimen_Berita",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "@bull-board/express": "^5.7.1",
+    "@nlpjs/lang-id": "^4.26.1",
+    "bull": "^4.10.4",
+    "bullmq": "^4.6.3",
     "cookie-parser": "^1.4.5",
     "debug": "^4.1.1",
+    "dotenv": "^16.3.1",
     "ejs": "^3.1.3",
     "express": "^4.17.1",
     "http-errors": "^1.8.0",
+    "indo-news-scraper": "^1.4.0",
+    "moment": "^2.29.4",
     "morgan": "^1.10.0",
+    "newspaper": "^0.1.1",
+    "newspaperjs": "^1.0.8",
+    "node-cron": "^3.0.2",
+    "node-nlp": "^4.27.0",
     "pg": "^8.2.1",
     "pg-hstore": "^2.3.3",
-    "sequelize": "^6.2.4"
+    "sequelize": "^6.2.4",
+    "swagger-ui-express": "^5.0.0"
   }
 }

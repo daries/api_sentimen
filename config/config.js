@@ -1,3 +1,4 @@
+require('dotenv').config();
 const creds = {
   development: {
     username: process.env.DB_USERNAME,

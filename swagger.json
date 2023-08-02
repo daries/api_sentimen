@@ -1,0 +1,90 @@
+{
+    "swagger":"2.0",
+    "info":{
+       "description":"API Sentimen Berita",
+       "title":"Dokumentasi API Sentimen Berita",
+       "version":"v1.0"
+    },
+    "tags":[
+       {
+          "name":"v1"
+       }
+    ],
+    "consumes":[
+       "application/json"
+    ],
+    "produces":[
+       "application/json"
+    ],
+    "paths":{
+       "/api/sentimen":{
+          "get":{
+             "tags":[
+                "v1"
+             ],
+             "description":"untuk ambil semua hasil analisa sentimen berita",
+             "consumes":[
+                "application/json"
+             ],
+             "produces":[
+                "application/json"
+             ],
+             "parameters":[
+                {
+                   "name":"Accept",
+                   "in":"header",
+                   "description":"The Accept request-header field can be used to specify the media types which are acceptable for the response. If not provided, the default value will be application/json",
+                   "required":false,
+                   "default":"application/json",
+                   "type":"string"
+                },
+                {
+                   "name":"Content-Type",
+                   "in":"header",
+                   "description":"The MIME type of the body of the request.  Required for PUT, POST, and PATCH, where a request body is expected to be provided.",
+                   "required":true,
+                   "default":"application/json; charset=utf-8",
+                   "type":"string"
+                }
+             ],
+             "responses":{
+                "200":{
+                   "description":"OK",
+                   "headers":{
+                      "transaction_id":{
+                         "type":"string",
+                         "default":"de305d54-75b4-431b-adb2-eb6b9e546013",
+                         "description":"The identifier for the service transaction attempt."
+                      }
+                   }
+                }
+             }
+          }
+       }
+    },
+    "definitions":{
+       "exampleDefinition":{
+          "type":"object",
+          "description":"Request details for Example Definition",
+          "properties":{
+             "action":{
+                "type":"string",
+                "description":"Specifies the action to be taken"
+             },
+             "applyToBase":{
+                "type":"string",
+                "description":"A boolean value that defines the behaviour of the request against the base"
+             },
+             "addOnIDs":{
+                "type":"string",
+                "description":"The identifiers for the add-ons"
+             }
+          },
+          "required":[
+             "action",
+             "applyToBase",
+             "addOnIDs"
+          ]
+       }
+    }
+ }
